@@ -49,7 +49,7 @@ public class Finance {
         String command = args[0];
         boolean isValidCommand = validateCommandArguments(args);
         if(!(commandsToUsage.containsKey(command))){
-            System.out.println(command+":command not found");
+            System.out.println(command+": command not found");
             return;
         }if(!(isValidCommand)){
             System.out.println(commandsToUsage.get(args[0]));
